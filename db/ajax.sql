@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 20, 2023 at 03:40 AM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.6
+-- Generation Time: Jan 22, 2023 at 04:55 AM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,31 +24,32 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `test`
+-- Table structure for table `person`
 --
 
-CREATE TABLE `test` (
+CREATE TABLE `person` (
   `id` int(11) NOT NULL,
   `name` varchar(250) NOT NULL,
   `age` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `test`
+-- Dumping data for table `person`
 --
 
-INSERT INTO `test` (`id`, `name`, `age`) VALUES
-(31, 'fefe23', '43'),
-(33, 'king', '23');
+INSERT INTO `person` (`id`, `name`, `age`) VALUES
+(24, 'renz', '54'),
+(27, 'king', '32'),
+(30, 'kong', '34');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `test`
+-- Indexes for table `person`
 --
-ALTER TABLE `test`
+ALTER TABLE `person`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -56,10 +57,10 @@ ALTER TABLE `test`
 --
 
 --
--- AUTO_INCREMENT for table `test`
+-- AUTO_INCREMENT for table `person`
 --
-ALTER TABLE `test`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+ALTER TABLE `person`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

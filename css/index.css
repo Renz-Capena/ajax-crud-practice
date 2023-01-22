@@ -1,0 +1,28 @@
+.edit_php{
+    border: 1px solid rgb(139, 179, 47);
+}
+#edit_container{
+    /* border: 1px solid red; */
+    /* text-align: center; */
+    width: fit-content;
+    margin: auto;
+    
+}
+#edit_container input{
+    text-align: center;
+    outline: none;
+}
+#edit_container > div{
+    /* border: 1px solid red; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+.closeBtn_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+table{
+    text-align: center;
+}
